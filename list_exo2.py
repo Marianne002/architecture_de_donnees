@@ -2,5 +2,7 @@
 # des éléments d'une liste.
 # La rotation doit être définie par l'utilisateur.
 
-def rotate_list(input_list, rotation):
-    return input_list[-rotation:] + input_list[:-rotation]
+def rotate_list(liste):
+    x = input("Combien de rotation voulez-vous ? ")
+    new_liste = liste[int(x):] + liste[0:int(x)]
+    return new_liste
